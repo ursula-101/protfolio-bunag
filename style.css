@@ -469,11 +469,53 @@ nav ul li a:hover {
 
 /* Footer */
 .site-footer {
-  background: linear-gradient(90deg, #5682B1 60%, #739EC9 100%);
-  color: #fff;
+  background: none; /* Remove blue background */
+  color: #5682B1;   /* Make copyright text blue */
   text-align: center;
-  padding: 10px 0 18px 0;
+  padding: 10px 0 6px 0; /* Reduced height */
   font-size: 17px;
   letter-spacing: 1px;
-  margin-top: 30px;
+  margin-top: 40px;
+}
+
+/* Add to your style.css */
+.edu-tags {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;   /* Align tags to the left */
+  padding-bottom: 16px;
+  padding-left: 14px;          /* Add space at the bottom */
+}
+
+.edu-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  border: 1.5px solid #5682B1;
+  border-radius: 20px;
+  background: #fff;
+  color: #5682B1;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  cursor: default;
+  user-select: none;
+}
+
+.edu-tag i {
+  font-size: 15px;
+  color: #5682B1;
+  margin-right: 3px;
+}
+
+.edu-tag:hover {
+  background: #5682B1;
+  color: #fff;
+  border-color: #5682B1;
+}
+.edu-tag:hover i {
+  color: #fff;
 }
