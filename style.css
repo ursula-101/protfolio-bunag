@@ -424,6 +424,19 @@ nav ul li a:hover {
   }
 }
 
+/* Fade-in on scroll animation */
+.section-fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: opacity, transform;
+}
+
+.section-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Responsive */
 @media (max-width: 1000px) {
   .hero, .about, .services, .projects, .contact {
@@ -452,4 +465,15 @@ nav ul li a:hover {
     gap: 8px;
     padding: 10px 8px;
   }
+}
+
+/* Footer */
+.site-footer {
+  background: linear-gradient(90deg, #5682B1 60%, #739EC9 100%);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0 18px 0;
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin-top: 30px;
 }
